@@ -1,0 +1,348 @@
+:root {
+  --iris: #4d5ae5;
+  --navyblue: #2e2f42;
+  --ocean: #404bbf;
+  --white: #fff;
+  --slate: #434455;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER PART */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header-container {
+    border-bottom: 1px solid var(--cornflower);
+    background: var(--white, #FFF);
+    padding: 24px 156px;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-navigation {
+    display: inline-flex;
+    gap: 76px;
+    
+}
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 24px;
+  align-items: center;
+}
+.logo span {
+    margin: 0;
+}
+.logo-web {
+  color: var(--iris);
+}
+.logo-studio {
+  color: var(--navyblue);
+}
+
+
+.link-pages a, 
+.link-pages {
+    text-decoration: none;
+    color: var(--navyblue);
+    font-weight: 500;
+    list-style-type: none;
+    display: inline-flex;
+    gap: 40px;
+}
+.link-pages a:hover,
+.link-pages a:focus {
+    color: var(--ocean);
+}
+.communication a,
+.communication {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--slate);
+    display: flex;
+    gap: 40px;
+
+}
+.communication a:hover,
+.communication a:focus {
+    color: var(--ocean);
+}
+
+/* MAIN */
+/* HERO Section */
+
+.hero {
+    background-color: var(--navyblue);
+    height: 600px;
+}
+.hero-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    padding-top: 188px;
+    
+}
+.hero-button {
+    cursor: pointer;
+    color: var(--white);
+    background: var(--iris);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    display: flex;
+    margin:  48px auto;
+    
+}
+.hero button:hover,
+.hero button:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+}
+
+
+/* Section 1 */
+.feauture-container {
+    height: 104px;
+    flex-shrink: 0;
+}
+.feature {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    justify-content: center;
+}
+.feature-box {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.feature-title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.description {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 24px; 
+    letter-spacing: 0.32px;
+}
+
+/* Section 2 */
+.what-we-do {
+    height: 412px;
+    flex-shrink: 0;
+}
+.what-we-do-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.what-we-do-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+
+/* Section 3 */
+.team {
+    background-color: var(--cloud);
+    height: 732px;
+    flex-shrink: 0;
+    margin-top: 120px;
+}
+.team-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+
+    padding-top: 120px;
+    margin-bottom: 72px;
+    
+}
+.team-card {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.card-content {
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.team-name {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    list-style: none;
+    text-align: center;
+}
+.team-role {
+    color: var(--slate);
+    list-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+.team-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+/* FOOTER */
+.footer-container{
+    background-color: var(--navyblue);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+    flex-shrink: 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 156px;
+}
+.footer-motto {
+    margin-top: 8px;
+}
+.logo-studio2 {
+    color: var(--cloud);
+}
+.motto {
+    color: var(--cloud);
+}
+
+
+
+
+
+/*  PORTFOLIO STYLES  */
+.filters {
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+.buttons-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.filter-button {
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
+    color: var(--iris);
+    text-align: center;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buttons-list button:hover,
+.buttons-list button:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+}
+.projects-container {
+    display: flex;
+}
+.project-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
+.project-list:last-child {
+    margin-bottom: 120px;
+}
+.card-title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+.card-info {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.project-card-content {
+    padding: 32px 16px;
+}
+.project {
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+}
