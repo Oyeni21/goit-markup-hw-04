@@ -6,6 +6,7 @@
   --slate: #434455;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
+  --lightslate: #8E8F99;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  margin: 0;
 }
 
 h1,
@@ -32,24 +32,25 @@ ul {
 
 /* HEADER PART */
 .container {
-    max-width: 1440px;
+    width: 1158px;
     margin: 0 auto;
 }
 .header-container {
     border-bottom: 1px solid var(--cornflower);
     background: var(--white, #FFF);
     padding: 24px 156px;
-    margin: 0;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 .header-navigation {
     display: inline-flex;
     gap: 76px;
-    
 }
-
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+    
+    
+    
 .logo {
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -107,6 +108,11 @@ ul {
 .hero {
     background-color: var(--navyblue);
     height: 600px;
+    flex-shrink: 0;
+    background: url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1694995200&Signature=Vy35gh1zsUOhnLHa-i-Sq6v4J-TngNvi3XeXSO5Z7u5z9m-eBvpSz~AaPaza~i7ifOCFeA6KbkFFdOtQI4wGDl75nNJhkgnGZ0~dN-LUEMvEYYnWAeULvyq~XygpR5x5mE9X4GKUU0ZhSlmgBXlUcPJTV4h7v4q-bhpgcaSBjL2CRZlpeGKw6hes0VWTT5nysQPldGHymAgFMnE53ylcawBIf1VBxfZBTa-8C48iCY3QkJJDHi2HjXOges44wgwmh-NUpKRZhHQxY8kwTsSqL2DeA5rqG-updqRO4-SP7Q3BwBvn3KXt~RZdSDCgoMkgV5BDZ1bYRylq5~YlcuV0fg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 0px -167.766px / 100% 139.922% no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+
 }
 .hero-title {
     color: var(--white);
@@ -161,11 +167,25 @@ ul {
     align-items: flex-start;
     gap: 8px;
 }
+.rectangle {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--cloud);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .feature-title {
     color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .description {
     color: var(--slate);
@@ -223,7 +243,6 @@ ul {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .card-content {
-    gap: 8px;
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -243,6 +262,9 @@ ul {
     line-height: 24px;
     letter-spacing: 0.32px;
     text-align: center;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .team-list {
     list-style: none;
@@ -250,6 +272,30 @@ ul {
     justify-content: center;
     gap: 24px;
     margin-bottom: 120px;
+}
+.teams-social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.teams-social-item {
+    width: 40px;
+    height: 40px;
+}
+.teams-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--iris);
+}
+.teams-social-icon {
+    fill: var(--white);
 }
 
 /* FOOTER */
@@ -276,9 +322,49 @@ ul {
     color: var(--cloud);
 }
 
+/* Customer section */
+.customers {
+    background-color: var(--white);
+    margin: 120px 156px;
+}
+.customers-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.customers-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
 
+    color: var(--navyblue);
+    text-align: center;
+    padding-bottom: 72px;
+}
+.logo-container {
+    width: 168px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--lightslate);
+    border-radius: 3%;
+}
 
-
+.customers-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 24px;
+}
+.client-logo {
+    fill: #8E8F99;
+}
 
 /*  PORTFOLIO STYLES  */
 .filters {
